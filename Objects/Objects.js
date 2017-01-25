@@ -6,7 +6,7 @@ function person(name,vorname,alter){
     this.name = name;
     this.vorname = vorname;
     this.alter = alter;
-    
+
     this.getAge = function(){
         return this.alter;
     }
@@ -26,7 +26,6 @@ persons.push(new person("Zani","Noah",26));
 
 
 persons.forEach((e,i) => {
-   
     var listElement = document.createElement('li');
     listElement.innerText = e.getName();
     personList.appendChild(listElement);
